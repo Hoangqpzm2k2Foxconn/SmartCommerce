@@ -15,7 +15,7 @@ def generate_project_markdown(project_name, apps, team, template, output_dir="."
     # Create stage-specific directories
     for i, (stage_name, _) in enumerate(template["SDLC Stages"].items()):
         stage_dir = os.path.join(
-            output_dir, f"{i+1:02d}. {stage_name}"
+            output_dir, f"{stage_name}"
         )  # Format: "01. Analysis"
         os.makedirs(
             stage_dir, exist_ok=True
