@@ -1,0 +1,32 @@
+@echo off
+echo Starting SmartCommerce Development Server...
+
+:: Create and activate virtual environment if it doesn't exist
+if not exist "venv" (
+    echo Creating virtual environment...
+    python -m venv venv
+)
+
+:: Activate virtual environment
+call venv\Scripts\activate
+
+:: Install requirements
+echo Installing requirements...
+pip install -r requirements\local.txt
+
+:: Run migrations
+echo Running migrations...
+python manage.py makemigrations
+python manage.py migrate
+
+:: Create superuser if it doesn't exist
+echo.
+echo To create a superuser, use the following command:
+echo python manage.py createsuperuser
+echo.
+
+:: Run server
+echo Starting server...
+python manage.py runserver
+
+pause
