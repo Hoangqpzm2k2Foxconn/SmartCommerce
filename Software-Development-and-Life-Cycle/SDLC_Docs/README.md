@@ -8,21 +8,67 @@ This project focuses on developing the SmartCommerce platform, including the fol
 
 - **Project Manager**: [PM](projectmanager.md)
 - **Tech Lead**: [Tech Lead](techlead.md)
-- **Developers**: 3-5 people.
+- **Developers**: 3 people.
 
 For detailed responsibilities, please refer to the roles' specific pages.
 
 ## SDLC Overview
 
 ```mermaid
-graph LR
-  1(1.Analysis) --> 2
-  2(2.Plan) --> 3
-  3(3.Design) --> 4
-  4(4.Code) --> 5
-  5(5.Quality Control) --> 6
-  6(6.Deploy) --> 7
-  7(7.Maintenance) --> End
+gantt
+  dateFormat  YYYY-MM-DD
+  axisFormat %Y-%m-%d
+  title SDLC Overview
+
+  section 1. Analysis (2024-12-21 to 2024-12-28)
+    Define project goals and objectives. : 2024-12-21, 2024-12-28
+    Collect user requirements and business needs. : 2024-12-21, 2024-12-28
+    Identify system stakeholders and their needs. : 2024-12-21, 2024-12-28
+    Analyze feasibility and define project scope : 2024-12-21, 2024-12-28
+    %% Roles: Product Owner, Project Manager, Business Analyst, CTO %%
+  section 2. Plan (2024-12-28 to 2025-01-04)
+    Create project timeline and schedule. : 2024-12-28, 2025-01-04
+    Estimate required resources (developers, budget, etc) : 2024-12-28, 2025-01-04
+    Plan resource allocation : 2024-12-28, 2025-01-04
+    Identify risks and mitigation strategies : 2024-12-28, 2025-01-04
+    Prepare a development plan : 2024-12-28, 2025-01-04
+    %% Roles: Project Manager, CTO %%
+  section 3. Design (2025-01-04 to 2025-01-18)
+    Design system architecture : 2025-01-04, 2025-01-18
+    Create database schema : 2025-01-04, 2025-01-18
+    Plan out APIs : 2025-01-04, 2025-01-18
+    Design user interface (UI) and user experience (UX) : 2025-01-04, 2025-01-18
+    Establish system entry points (web) : 2025-01-04, 2025-01-18
+    %% Roles: System Architect, UX/UI designers %%
+  section 4. Code (2025-01-18 to 2025-03-15)
+    Implement core app logic and functionality : 2025-01-18, 2025-03-15
+    Develop front-end interfaces : 2025-01-18, 2025-03-15
+    Develop back-end APIs and services : 2025-01-18, 2025-03-15
+    Integrate UI/UX designs : 2025-01-18, 2025-03-15
+    Write user guide documents : 2025-01-18, 2025-03-15
+    Build function libraries : 2025-01-18, 2025-03-15
+    %% Roles: Front-end Devs, Back-end Devs %%
+  section 5. QC (Quality Control) (2025-03-15 to 2025-03-29)
+    Execute unit testing : 2025-03-15, 2025-03-29
+    Perform integration testing : 2025-03-15, 2025-03-29
+    Carry out system testing : 2025-03-15, 2025-03-29
+    Conduct user acceptance testing (UAT) : 2025-03-15, 2025-03-29
+    Identify and track all discovered bugs : 2025-03-15, 2025-03-29
+    %% Roles: Solutions Architect, QC Engineer, Tester, DevOps, Trial, Users Test %%
+  section 6. Deploy (2025-03-29 to 2025-04-05)
+    Setup deployment environment : 2025-03-29, 2025-04-05
+    Deploy application to server or cloud : 2025-03-29, 2025-04-05
+    Configure database : 2025-03-29, 2025-04-05
+    Setup user accounts : 2025-03-29, 2025-04-05
+    Monitor the system post-deployment : 2025-03-29, 2025-04-05
+    %% Roles: DevOps, Database Admin, Business (sign) %%
+  section 7. Maintenance (Starting: 2025-04-05)
+    Monitor system for issues : 2025-04-05, 1d
+    Address and resolve bugs : 2025-04-05, 1d
+    Gather user feedback and requests : 2025-04-05, 1d
+    Plan future updates and enhancements : 2025-04-05, 1d
+    Maintain system documentation : 2025-04-05, 1d
+    %% Roles: Users, Testers, Support Managers %%
 ```
 
 ## Detailed Stages
@@ -53,7 +99,7 @@ graph LR
   - Product Owner
   - Project Manager
   - Business Analyst
-  <!-- - CTO -->
+  - CTO
 
 
 ### 2. Plan
@@ -78,7 +124,7 @@ graph LR
 
 - **Roles:**
   - Project Manager
-  <!-- - CTO -->
+  - CTO
 
 
 ### 3. Design
