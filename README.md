@@ -11,6 +11,10 @@ A Django-based e-commerce platform with integrated payment processing, online co
 - RESTful API
 - Docker support
 
+## Documents
+
+Please view in `Software-Development-and-Life-Cycle` for more information
+
 ## Setup
 
 1. Clone the repository
